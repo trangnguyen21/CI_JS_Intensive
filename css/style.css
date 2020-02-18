@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+html{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .login {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+
+  }
+#confilm ::placeholder {
+  display: none;
+  color: #FFAC3F;
+}
+  .login-form {
+    width: 1000px;
+    height: 500px;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    margin-top: 10%;
+    margin-bottom: 10%;
+   }
+   .box1 {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-image: url('https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/blog-post-1-1024x567.jpg');
+   }
+ .box2 {
+    width: 50%;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ #Title {
+    font-display: Montserrat;
+     font-size: 100px;
+     color: #FFAC3F;
+     margin-top: -20px;
+ }
+ p {
+    font-display: Montserrat;
+   font-size: 50px;
+   color: white;
+   line-height: 1.5;
+   text-align: center;
+   padding: 5px;
+ }
+ .ask-more {
+    font-size: 19px;
+    font-weight: 700;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   margin-top: 8px;
+}
+/* --- Signup*/
+#Title-signup {
+    font-family: 'Kristi', cursive;
+    font-size: 50px;
+    color: #FFAC3F;
+    margin-bottom: 10px;
+  }
+  input[type=text] {
+    width: 80%;
+    height: 30px;
+    box-sizing: border-box;
+    color: grey;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  input[type=name] {
+    width: 80%;
+    height: 30px;
+    box-sizing: border-box;
+    color: grey;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  input[type=password] {
+    width: 80%;
+    height: 30px;
+    box-sizing: border-box;
+    /* color: grey; */
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  input[type=email] {
+    width: 80%;
+    height: 30px;
+    box-sizing: border-box;
+    color: grey;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  #signup-button {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+   background: #FFAC3F;
+   font-weight: 700;
+   font-size: 19px;
+   color: white;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    border: none
+ }
+ #mg-erro {
+   color: red;
+   font-size: 16px;
+   font-family: 'Montserrat', sans-serif;
+ }
