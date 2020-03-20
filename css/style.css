@@ -1,149 +1,103 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-html{
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.register-container {
   width: 100%;
-  background-color: white;
+  min-width: 400px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  background: url(../login-background.jpg) no-repeat center center;
+  background-size: cover;
 }
-.limiter {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .login {
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 15px;
 
-  }
-#confilm ::placeholder {
-  display: none;
-  color: #FFAC3F;
+.register-container .form-wrapper {
+  width: 500px;
+  min-width: 400px;
+  height: 100%;
+  padding: 70px 50px;
+  background-color: #ffffff;
 }
-  .login-form {
-    width: 1000px;
-    height: 500px;
-    background: black;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    flex-direction: row-reverse;
-    margin-top: 10%;
-    margin-bottom: 10%;
-   }
-   .box1 {
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-    background-image: url('https://wanderers.qodeinteractive.com/wp-content/uploads/2018/02/blog-post-1-1024x567.jpg');
-   }
- .box2 {
-    width: 50%;
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
- .input-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- }
- #Title {
-    font-display: Montserrat;
-     font-size: 100px;
-     color: #FFAC3F;
-     margin-top: -20px;
- }
- p {
-    font-display: Montserrat;
-   font-size: 50px;
-   color: white;
-   line-height: 1.5;
-   text-align: center;
-   padding: 5px;
- }
- .ask-more {
-    font-size: 19px;
-    font-weight: 700;
-   color: white;
-   font-family: 'Montserrat', sans-serif;
-   margin-top: 8px;
+
+.register-container .form-wrapper .logo {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }
-/* --- Signup*/
-#Title-signup {
-    font-family: 'Kristi', cursive;
-    font-size: 50px;
-    color: #FFAC3F;
-    margin-bottom: 10px;
-  }
-  input[type=text] {
-    width: 80%;
-    height: 30px;
-    box-sizing: border-box;
-    color: grey;
-    font-size: 19px;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  input[type=name] {
-    width: 80%;
-    height: 30px;
-    box-sizing: border-box;
-    color: grey;
-    font-size: 19px;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  input[type=password] {
-    width: 80%;
-    height: 30px;
-    box-sizing: border-box;
-    /* color: grey; */
-    font-size: 19px;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  input[type=email] {
-    width: 80%;
-    height: 30px;
-    box-sizing: border-box;
-    color: grey;
-    font-size: 19px;
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  #signup-button {
-    width: 80%;
-    height: 40px;
-    border-radius: 10px;
-   background: #FFAC3F;
-   font-weight: 700;
-   font-size: 19px;
-   color: white;
-    line-height: 1.2;
-    text-transform: uppercase;
-    transition: all 0.4s;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
-    border: none
- }
- #mg-erro {
-   color: red;
-   font-size: 16px;
-   font-family: 'Montserrat', sans-serif;
- }
+
+.register-container .form-wrapper .logo span {
+  font-size: 32px;
+  font-weight: 300;
+  color: #788195;
+}
+
+.register-container .form-wrapper .form-container .name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-container .form-wrapper .form-container .name-wrapper .input-wrapper {
+  width: 48%;
+}
+
+.register-container .form-wrapper .form-container .register-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-container
+  .form-wrapper
+  .form-container
+  .register-footer
+  #already-have-account {
+  cursor: pointer;
+}
+
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+.input {
+  height: 42px;
+  padding: 6px 10px;
+  width: 100%;
+  cursor: text;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #595959;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+
+.btn {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4482ff;
+  border-color: #4482ff;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.5;
+  padding: 0 25px;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 36px;
+}
+
+.error {
+  color: #f5222d;
+}
